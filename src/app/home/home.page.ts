@@ -7,6 +7,16 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  public tapCounter:number = 0;
   constructor() {}
 
+  increase() {
+    this.tapCounter++;
+  }
+  decrease() {
+    this.tapCounter--;
+  }
+  reset() {
+    this.tapCounter = 0;
+  }
 }
